@@ -23,7 +23,7 @@
       <!-- TODO: Buatlah sebuah input bertipe text dengan id todo-input -->
       <!-- TODO: Buatlah sebuah button dengan id todo-submit -->
       <input type="text" id="todo-input" placeholder="Today I need to" onkeypress="Javascript: if (event.keyCode==13) fnClickHandler()">
-      <button type="button" id="todo-submit" onclick="fnClickHandler()">Submit</button>
+      <button type="button" id="todo-submit" >Submit</button>
 
       <!-- Section output -->
       <!-- TODO: Buatlah sebuah <ul> dengan id todo-output -->
@@ -38,7 +38,8 @@
       let button;
       let input;
       let output;
-
+      button = document.getElementById('todo-submit');
+      button.addEventListener('click', fnClickHandler);
       // TODO: Buatlah sebuah fungsi dengan nama fnClickHandler
       // Fungsi yang digunakan untuk menambahkan tulisan
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
